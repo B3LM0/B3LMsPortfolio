@@ -33,7 +33,7 @@ export function LoadingScreen() {
           transition={{ delay: 0.3 }}
           className="flex flex-col items-center gap-2"
         >
-          <p className="text-sm font-semibold gradient-text">Boualem Ben Yahia</p>
+          <p className="text-sm font-semibold gradient-text">Boualem BENYAHIA - Portfolio</p>
           <div className="flex gap-1">
             {[0, 1, 2].map((i) => (
               <motion.span

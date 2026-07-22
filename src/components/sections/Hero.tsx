@@ -103,7 +103,7 @@ export function Hero() {
             {/* Avatar */}
            <div className="relative w-56 h-56 sm:w-72 sm:h-72 rounded-full overflow-hidden shadow-2xl">
   <img
-    src={profile.avatarImage}
+    src="/MyPic.jpeg"
     alt={profile.name}
     className="w-full h-full object-cover"
   />
