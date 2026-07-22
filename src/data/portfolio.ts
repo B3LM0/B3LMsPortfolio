@@ -24,7 +24,7 @@ export const profile = {
   location: 'Medea, Algeria',
   email: 'benyahia.boualem@yahoo.com',
   phone: '+213 673 128 102',
-  cvUrl: '/cv.pdf',
+  cvUrl: '/CV-BoualemBENYAHIA.pdf',
   avatarText: 'BB',
   avatarImage: '/public/MyPic.jpeg',
   social: {
