@@ -26,7 +26,7 @@ export const profile = {
   phone: '+213 673 128 102',
   cvUrl: '#',
   avatarText: 'BB',
-  avatarImage: './public/MyPic.jpeg',
+  avatarImage: '/public/MyPic.jpeg',
   social: {
     github: 'https://github.com/B3LM0',
     linkedin: 'https://www.linkedin.com/in/boualem-benyahia-6332a0321?utm_source=share_via&utm_content=profile&utm_medium=member_android',
