@@ -148,6 +148,7 @@ export type Project = {
   githubUrl: string;
   liveUrl: string;
   accent: string;
+  logo?: string;
 };
 
 export const projects: Project[] = [
@@ -168,6 +169,7 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/B3LM0/AlFirma-App',
     liveUrl: 'https://al-firma.vercel.app/',
     accent: 'from-emerald-500 to-green-600',
+    logo: '/projects/alfirma.png',
   },
   {
   id: 'sidoushop26',
@@ -191,9 +193,10 @@ export const projects: Project[] = [
     'Firebase',
     'Cloudinary',
   ],
-  githubUrl: 'https://github.com/B3LM0/SidouShop26',
-  liveUrl: 'https://sidoushop26.vercel.app/',
-  accent: 'from-orange-500 to-red-600',
+    githubUrl: 'https://github.com/B3LM0/SidouShop26',
+    liveUrl: 'https://sidoushop26.vercel.app/',
+    accent: 'from-orange-500 to-red-600',
+    logo: '/projects/sidoushop.jpeg',
 },
   {
     id: 'vet-platform',
@@ -211,32 +214,8 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/B3LM0/Veto-Stane',
     liveUrl: 'https://veto-stane.vercel.app/',
     accent: 'from-cyan-500 to-blue-600',
+    logo: '/projects/veto-stane.jpeg',
   },
-  {
-  id: 'thinkboard',
-  title: 'ThinkBoard',
-  description:
-    'A collaborative task management platform built with the MERN stack, enabling teams to organize projects, track progress, and manage tasks through an intuitive dashboard',
-  features: [
-    'User authentication',
-    'Project & task management',
-    'Drag-and-drop task organization',
-    'Team collaboration',
-    'Progress tracking',
-    'Responsive dashboard',
-  ],
-  technologies: [
-    'MongoDB',
-    'Express.js',
-    'React',
-    'Node.js',
-    'JWT',
-    'Tailwind CSS',
-  ],
-  githubUrl: 'https://github.com/B3LM0/MERN---ThinkBoard',
-  liveUrl: '#',
-  accent: 'from-violet-500 to-purple-600',
-},
 {
   id: 'dna-sequence-analyzer',
   title: 'DNA Sequence Analyzer',
@@ -255,10 +234,10 @@ export const projects: Project[] = [
     'React',
     'Bioinformatics',
   ],
-  githubUrl: 'https://github.com/B3LM0/DNA-Sequence-Analysis-Mutation-Detection',
-  liveUrl: 'https://dna-sequence-analysis-mutation-dete.vercel.app/',
-  accent: 'from-emerald-500 to-teal-600',
-},
+    githubUrl: 'https://github.com/B3LM0/DNA-Sequence-Analysis-Mutation-Detection',
+    liveUrl: 'https://dna-sequence-analysis-mutation-dete.vercel.app/',
+    accent: 'from-emerald-500 to-teal-600',
+  },
 {
   id: 'pandas cheatsheet',
   title: 'Pandas CheatSheet',
@@ -277,10 +256,62 @@ export const projects: Project[] = [
     'JavaScript',
     'Tailwind CSS',
   ],
-  githubUrl: 'https://github.com/B3LM0/My-pandas-cheatsheet.git',
-  liveUrl: 'https://my-pandas-cheatsheet.vercel.app/',
-  accent: 'from-blue-500 to-cyan-600',
-},
+    githubUrl: 'https://github.com/B3LM0/My-pandas-cheatsheet.git',
+    liveUrl: 'https://my-pandas-cheatsheet.vercel.app/',
+    accent: 'from-blue-500 to-cyan-600',
+  },
+  {
+    id: 'lantica-emenu',
+    title: "L'Antica",
+    description:
+      'Restaurant website for L’Antica, pairing a full digital menu — pizzas, pasta, burgers, salads, desserts and drinks — with delivery information and phone ordering',
+    features: [
+      'Full digital menu',
+      'Searchable & filterable dishes',
+      'Category browsing',
+      'Dish detail modals',
+      'Ingredients & allergen details',
+      'Delivery zone rate table',
+      'Order by phone',
+      'Responsive design',
+    ],
+    technologies: [
+      'React',
+      'Vite',
+      'Tailwind CSS',
+      'Lucide React',
+    ],
+    githubUrl: 'https://github.com/B3LM0/lantica.git',
+    liveUrl: 'https://lanticaforno.vercel.app/',
+    accent: 'from-red-500 to-rose-600',
+    logo: '/projects/lantica.jpeg',
+  },
+  {
+    id: 'sadouki-emenu',
+    title: 'Pizzeria Sadouki',
+    description:
+      'Restaurant website for Pizzeria Sadouki, featuring artisanal pizzas, generous burgers and gourmet sandwiches, with home delivery and zone-based rates across Algiers',
+    features: [
+      'Full digital menu',
+      'Searchable & filterable dishes',
+      'Category browsing',
+      'Dish detail modals',
+      'Ingredients & allergen details',
+      'Delivery zone rate search',
+      'Order by phone',
+      'Responsive design',
+    ],
+    technologies: [
+      'React',
+      'Vite',
+      'Tailwind CSS',
+      'Lucide React',
+    ],
+    githubUrl: 'https://github.com/B3LM0/pizzeria-sadouki.git',
+    liveUrl: 'https://pizzeria-sadouki.vercel.app/',
+    accent: 'from-yellow-500 to-amber-600',
+    logo: '/projects/sadouki.jpeg',
+  },
 ];
 
 export type Experience = {

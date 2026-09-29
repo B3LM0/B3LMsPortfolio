@@ -1,9 +1,45 @@
 import { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, Github, ExternalLink, CheckCircle2 } from 'lucide-react';
-import { projects } from '@/data/portfolio';
+import { projects, type Project } from '@/data/portfolio';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { cn } from '@/utils/cn';
+
+// Fallback mark for projects without a usable logo: first letter of each word,
+// or the first two characters when the title is a single word.
+function initialsOf(title: string): string {
+  const words = title.replace(/[^a-z0-9\s]/gi, ' ').split(/\s+/).filter(Boolean);
+  if (words.length === 0) return '?';
+  if (words.length === 1) return words[0].slice(0, 2).toUpperCase();
+  return (words[0][0] + words[1][0]).toUpperCase();
+}
+
+// Faded mark in the banner background: the project logo, or the monogram if the
+// file is missing so the card never shows a broken image.
+function BannerLogo({ project }: { project: Project }) {
+  const [failed, setFailed] = useState(false);
+
+  if (!project.logo || failed) {
+    return (
+      <span
+        aria-hidden="true"
+        className="absolute -right-2 -bottom-8 select-none text-[8rem] font-black leading-none text-white/10"
+      >
+        {initialsOf(project.title)}
+      </span>
+    );
+  }
+
+  return (
+    <img
+      src={project.logo}
+      alt=""
+      loading="lazy"
+      onError={() => setFailed(true)}
+      className="absolute inset-0 h-full w-full object-contain opacity-25"
+    />
+  );
+}
 
 export function Projects() {
   const [query, setQuery] = useState('');
@@ -82,8 +118,9 @@ export function Projects() {
                 className="glass-card overflow-hidden group flex flex-col"
               >
                 {/* Banner */}
-                <div className={cn('relative h-32 bg-gradient-to-br', p.accent)}>
+                <div className={cn('relative h-32 overflow-hidden bg-gradient-to-br', p.accent)}>
                   <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'radial-gradient(circle at 30% 30%, white 1px, transparent 1px)', backgroundSize: '16px 16px' }} />
+                  <BannerLogo project={p} />
                   <div className="absolute bottom-3 left-4 right-4">
                     <h3 className="text-white font-bold text-lg drop-shadow leading-tight">{p.title}</h3>
                   </div>
