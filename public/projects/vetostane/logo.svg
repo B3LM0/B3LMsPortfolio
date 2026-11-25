@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="24" fill="#059669"/>
+  <g transform="translate(14 15) scale(0.7)">
+  <mask id="paw" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+    <rect width="100" height="100" fill="#fff"/>
+    <g fill="#000" transform="translate(85 27) scale(1.2727)">
+      <ellipse cx="0" cy="3.5" rx="3.6" ry="3"/><circle cx="-4.6" cy="-1.4" r="1.6"/><circle cx="-1.5" cy="-4.2" r="1.6"/><circle cx="1.9" cy="-4.2" r="1.6"/><circle cx="4.8" cy="-1.4" r="1.6"/>
+    </g>
+  </mask>
+  <g stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M9 16 L27 66 L45 16"/>
+    <path d="M27 66 C27 80 40 86 60 86 C78 86 88 80 87 69 C86 57 64 59 63 47 C62 36 72 30 82 31"/>
+  </g>
+  <circle cx="9" cy="14" r="6.12" fill="#ffffff"/>
+  <circle cx="45" cy="14" r="6.12" fill="#ffffff"/>
+  <circle cx="85" cy="27" r="14" fill="#ffffff" mask="url(#paw)"/>
+  </g>
+</svg>

@@ -57,12 +57,12 @@ export const education = [
   },
   {
     id: 'edu-2',
-    degree: "Master's Degree in BioInformatics",
-    institution: 'University of sciences and technologies Houarie Boumediane (USTHB)',
+    degree: "Master's Degree in Bioinformatics",
+    institution: 'University of Science and Technology Houari Boumediene (USTHB)',
     year: '2025 - present',
-    grade: '',
+    grade: 'In progress',
     description:
-      'In Progress',
+      'Combining computer science, data analysis and biology: algorithms for biological sequences, data processing and machine learning applied to life sciences.',
   },
 ];
 
@@ -139,180 +139,7 @@ export const skillCategories: SkillCategory[] = [
   },
 ];
 
-export type Project = {
-  id: string;
-  title: string;
-  description: string;
-  features: string[];
-  technologies: string[];
-  githubUrl: string;
-  liveUrl: string;
-  accent: string;
-  logo?: string;
-};
-
-export const projects: Project[] = [
-  {
-    id: 'alfirma',
-    title: 'AL FIRMA',
-    description:
-      'Agricultural platform connecting farmers, veterinarians, suppliers, transporters, and service providers in one unified ecosystem',
-    features: [
-      'Marketplace',
-      'AI plant disease detection',
-      'Recommendation system',
-      'Chat system',
-      'Equipment rental',
-      'Product management',
-    ],
-    technologies: ['React','Flutter', 'Firebase', 'AI (Image Classification)'],
-    githubUrl: 'https://github.com/B3LM0/AlFirma-App',
-    liveUrl: 'https://al-firma.vercel.app/',
-    accent: 'from-emerald-500 to-green-600',
-    logo: '/projects/alfirma.png',
-  },
-  {
-  id: 'sidoushop26',
-  title: 'SidouShop26',
-  description:
-    'A modern e-commerce platform designed for online accessory sellers, providing a seamless shopping experience, efficient order management ',
-  features: [
-    'Product catalog',
-    'Shopping cart & checkout',
-    'Order management',
-    'Customer management',
-    'Automatic shipping cost calculation',
-    'Wilaya & commune selection',
-    'Home & stop-desk delivery options',
-    'Responsive design',
-  ],
-  technologies: [
-    'React',
-    'Vite',
-    'Tailwind CSS',
-    'Firebase',
-    'Cloudinary',
-  ],
-    githubUrl: 'https://github.com/B3LM0/SidouShop26',
-    liveUrl: 'https://sidoushop26.vercel.app/',
-    accent: 'from-orange-500 to-red-600',
-    logo: '/projects/sidoushop.jpeg',
-},
-  {
-    id: 'vet-platform',
-    title: 'VetoStane',
-    description:
-      'A web application that combines veterinary clinic management with an integrated e-commerce system for pet products',
-    features: [
-      'Product catalog',
-      'Appointment management (Not yet)',
-      'Customer management',
-      'Orders',
-      'Inventory',
-    ],
-    technologies: ['React','NodeJS', 'Firebase'],
-    githubUrl: 'https://github.com/B3LM0/Veto-Stane',
-    liveUrl: 'https://veto-stane.vercel.app/',
-    accent: 'from-cyan-500 to-blue-600',
-    logo: '/projects/veto-stane.jpeg',
-  },
-{
-  id: 'dna-sequence-analyzer',
-  title: 'DNA Sequence Analyzer',
-  description:
-    'A bioinformatics application for analyzing DNA sequences, validating genetic data, and performing sequence pattern matching through an intuitive interface',
-  features: [
-    'DNA sequence validation',
-    'Pattern matching',
-    'Sequence analysis',
-    'Nucleotide statistics',
-    'Bioinformatics algorithms',
-    'Interactive interface',
-  ],
-  technologies: [
-    'Python',
-    'React',
-    'Bioinformatics',
-  ],
-    githubUrl: 'https://github.com/B3LM0/DNA-Sequence-Analysis-Mutation-Detection',
-    liveUrl: 'https://dna-sequence-analysis-mutation-dete.vercel.app/',
-    accent: 'from-emerald-500 to-teal-600',
-  },
-{
-  id: 'pandas cheatsheet',
-  title: 'Pandas CheatSheet',
-  description:
-    'An interactive reference platform that provides practical Pandas and SQL examples, helping developers and data analysts quickly find syntax, queries, and code snippets',
-  features: [
-    'Searchable references',
-    'SQL query examples',
-    'Pandas code snippets',
-    'Copy-to-clipboard',
-    'Responsive interface',
-    'Organized learning resources',
-  ],
-  technologies: [
-    'React',
-    'JavaScript',
-    'Tailwind CSS',
-  ],
-    githubUrl: 'https://github.com/B3LM0/My-pandas-cheatsheet.git',
-    liveUrl: 'https://my-pandas-cheatsheet.vercel.app/',
-    accent: 'from-blue-500 to-cyan-600',
-  },
-  {
-    id: 'lantica-emenu',
-    title: "L'Antica",
-    description:
-      'Restaurant website for L’Antica, pairing a full digital menu — pizzas, pasta, burgers, salads, desserts and drinks — with delivery information and phone ordering',
-    features: [
-      'Full digital menu',
-      'Searchable & filterable dishes',
-      'Category browsing',
-      'Dish detail modals',
-      'Ingredients & allergen details',
-      'Delivery zone rate table',
-      'Order by phone',
-      'Responsive design',
-    ],
-    technologies: [
-      'React',
-      'Vite',
-      'Tailwind CSS',
-      'Lucide React',
-    ],
-    githubUrl: 'https://github.com/B3LM0/lantica.git',
-    liveUrl: 'https://lanticaforno.vercel.app/',
-    accent: 'from-red-500 to-rose-600',
-    logo: '/projects/lantica.jpeg',
-  },
-  {
-    id: 'sadouki-emenu',
-    title: 'Pizzeria Sadouki',
-    description:
-      'Restaurant website for Pizzeria Sadouki, featuring artisanal pizzas, generous burgers and gourmet sandwiches, with home delivery and zone-based rates across Algiers',
-    features: [
-      'Full digital menu',
-      'Searchable & filterable dishes',
-      'Category browsing',
-      'Dish detail modals',
-      'Ingredients & allergen details',
-      'Delivery zone rate search',
-      'Order by phone',
-      'Responsive design',
-    ],
-    technologies: [
-      'React',
-      'Vite',
-      'Tailwind CSS',
-      'Lucide React',
-    ],
-    githubUrl: 'https://github.com/B3LM0/pizzeria-sadouki.git',
-    liveUrl: 'https://pizzeria-sadouki.vercel.app/',
-    accent: 'from-yellow-500 to-amber-600',
-    logo: '/projects/sadouki.jpeg',
-  },
-];
+export { projects, type Project } from './projects';
 
 export type Experience = {
   id: string;
