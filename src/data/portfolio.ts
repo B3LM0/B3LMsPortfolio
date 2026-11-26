@@ -21,7 +21,7 @@ export const profile = {
 ],
   shortIntro:
   'Software Engineering graduate passionate about Full Stack Development, Maching Learning, and Data Science, focused on creating modern, reliable, and user-centered applications',
-  location: 'Medea, Algeria',
+  location: 'Algiers, Algeria',
   email: 'benyahia.boualem@yahoo.com',
   phone: '+213 673 128 102',
   cvUrl: '/CV_BoualemBENYAHIA.pdf',
